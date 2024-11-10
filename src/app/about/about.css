@@ -1,0 +1,113 @@
+/* General container styles */
+.about-container {
+    min-height: 100vh;
+    background-color: #f3f4f6; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1.5rem;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700; /* Extrabold */
+    text-align: center;
+    color: #1f2937; /* Gray-800 */
+    margin-bottom: 0.75rem;
+}
+
+.about-description {
+    font-size: 1.125rem;
+    color: #4b5563; /* Gray-600 */
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Section styles */
+.section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #1f2937; /* Gray-800 */
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    color: #4b5563; /* Gray-600 */
+    margin-bottom: 1.5rem;
+}
+
+/* Skills and Technologies */
+.skills-expertise {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns for parallel layout */
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    color: #4b5563; /* Gray-600 */
+    margin-bottom: 1rem;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tech-item {
+    background-color: #e0f2fe; /* Blue-200 */
+    color: #3b82f6; /* Blue-600 */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .skills-expertise {
+        grid-template-columns: 1fr; /* Stack sections on smaller screens */
+    }
+}
+
+/* Values Section */
+.values-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #4b5563; /* Gray-600 */
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.value-item::before {
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #3b82f6; /* Blue-500 */
+    border-radius: 50%;
+    margin-right: 1rem;
+}

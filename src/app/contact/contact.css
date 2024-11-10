@@ -1,0 +1,132 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+/* Main contact page */
+.contact-page {
+    min-height: 100vh;
+    background-color: #f3f4f6; 
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 0.75rem;
+}
+
+.header-description {
+    font-size: 1.125rem;
+    color: #4B5563;
+}
+
+/* Main grid for form and contact info */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns on medium screens */
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-form:hover {
+    transform: scale(1.05);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.375rem;
+    outline: none;
+}
+
+.input:focus, .textarea:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 2px #2563EB;
+}
+
+.submit-button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1D4ED8;
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-info:hover {
+    transform: scale(1.05);
+}
+
+.contact-info-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 1rem;
+}
+
+.contact-info-text {
+    color: #4B5563;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.contact-details p {
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.footer-text {
+    color: #4B5563;
+    text-align: center;
+    margin-top: 1rem;
+}
